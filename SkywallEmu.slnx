@@ -1,4 +1,5 @@
 <Solution>
   <Project Path="src/SkywallEmu.Database/SkywallEmu.Database.csproj" />
   <Project Path="src/SkywallEmu.Game/SkywallEmu.Game.csproj" />
+  <Project Path="src/SkywallEmu.Utils/SkywallEmu.Utils.csproj" />
 </Solution>

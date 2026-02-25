@@ -12,7 +12,7 @@ namespace SkywallEmu.Utils.Services;
 /// </summary>
 public static class ServiceAccessor
 {
-    private static IServiceProvider? s_serviceProvider = null;
+    private static IServiceProvider? s_serviceProvider;
 
     /// <summary>
     /// Sets the service provider which contains the services of the application.

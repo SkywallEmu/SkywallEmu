@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 namespace SkywallEmu.Utils.Configuration;
 
 /// <summary>
-/// An Accessor class that allows reading loaded appsettings.json configuration values from anywhere once the
+/// An accessor class that allows reading loaded appsettings.json configuration values from anywhere once the
 /// application has been initialized
 /// </summary>
 public static class AppSettings

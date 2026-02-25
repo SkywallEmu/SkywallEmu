@@ -6,6 +6,10 @@ using Microsoft.Extensions.DependencyInjection;
 
 namespace SkywallEmu.Utils.Services;
 
+/// <summary>
+/// An accessor class that allows accessing service instances from anywhere within the application once it has been
+/// initialized
+/// </summary>
 public static class ServiceAccessor
 {
     private static IServiceProvider? s_serviceProvider = null;

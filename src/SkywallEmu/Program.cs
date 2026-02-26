@@ -1,5 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SkywallEmu.Game.Services.Hosted;
+using SkywallEmu.Game.Services.Singletons;
 using SkywallEmu.Utils.Configuration;
 using SkywallEmu.Utils.Services;
 
@@ -15,6 +18,10 @@ class Program
 
         // Register the loaded configuration in the AppSettings accessor class
         AppSettings.SetConfigurationManager(builder.Configuration);
+
+        builder.Services.AddSingleton<AuthenticationService>();
+        builder.Services.AddSingleton<SessionService>();
+        builder.Services.AddHostedService<GruntLoginService>();
 
         var app = builder.Build();
 
